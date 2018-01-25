@@ -1,0 +1,27 @@
+{
+    "title": "NideShop 文档",
+    "description": "NideShop：基于Node.js+MySQL开发的开源微信小程序商城",
+    "author": "tumobi@163.com",
+    "language": "zh-hans",
+    "links": {
+        "sidebar": {
+            "NideShop 文档": "https://nideshop.com/docs"
+        }
+    },
+    "plugins": [
+        "-search",
+        "-lunr",
+        "-highlight",
+        "sitemap",
+        "ad"
+    ],
+    "pluginsConfig": {
+        "sitemap": {
+            "hostname": "https://nideshop.com/docs"
+        },
+        "ad": {
+            "contentTop": "",
+            "contentBottom": "%3Cdiv%20style%3D%22display%3A%20none%3B%22%3E%3Cscript%20src%3D%22https%3A//s13.cnzz.com/z_stat.php%3Fid%3D1263664614%26web_id%3D1263664614%22%20language%3D%22JavaScript%22%3E%3C/script%3E%3C/div%3E%3Cscript%3Evar%20_hmt%20%3D%20_hmt%20%7C%7C%20%5B%5D%3B%28function%20%28%29%20%7Bvar%20hm%20%3D%20document.createElement%28%27script%27%29%3Bhm.src%20%3D%20%27https%3A//hm.baidu.com/hm.js%3Ff2b15ae1752b95329ed62bb15c2a9787%27%3Bvar%20s%20%3D%20document.getElementsByTagName%28%27script%27%29%5B0%5D%3Bs.parentNode.insertBefore%28hm%2C%20s%29%3B%7D%29%28%29%3B%3C/script%3E"
+        }
+    }
+}
