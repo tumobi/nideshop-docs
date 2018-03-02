@@ -87,34 +87,25 @@ npm install
 
 + 修改 Nideshop 的数据库配置
 ```
-vim src/common/config/adapter.js
+vim src/common/config/database.js
 ```
 
 修改后
+
 ```
- 24 /**
- 25  * model adapter config
- 26  * @type {Object}
- 27  */
- 28 exports.model = {
- 29   type: 'mysql',
- 30   common: {
- 31     logConnect: isDev,
- 32     logSql: isDev,
- 33     logger: msg => think.logger.info(msg)
- 34   },
- 35   mysql: {
- 36     handle: mysql,
- 37     database: 'nideshop',
- 38     prefix: 'nideshop_',
- 39     encoding: 'utf8mb4',
- 40     host: '127.0.0.1',
- 41     port: '3306',
- 42     user: 'root',
- 43     password: '你的密码',
- 44     dateStrings: true
- 45   }
- 46 };
+const mysql = require('think-model-mysql');
+
+module.exports = {
+    handle: mysql,
+    database: 'nideshop',
+    prefix: 'nideshop_',
+    encoding: 'utf8mb4',
+    host: '127.0.0.1',
+    port: '3306',
+    user: 'root',
+    password: '你的密码',
+    dateStrings: true
+};
 ```
 
 >注意 encoding，prefix 的值

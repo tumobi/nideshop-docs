@@ -87,32 +87,23 @@ npm install --registry=https://registry.npm.taobao.org --verbose
 
 + 配置mysql
 ```
-vim src/common/config/adapter.js
+vim src/common/config/database.js
 ```
 修改后：
+
 ```
-/**
- * model adapter config
- * @type {Object}
- */
-exports.model = {
-  type: 'mysql',
-  common: {
-    logConnect: isDev,
-    logSql: isDev,
-    logger: msg => think.logger.info(msg)
-  },
-  mysql: {
-    handle: mysql,
-    database: 'app_' + process.env.APPNAME,
-    prefix: 'nideshop_',
-    encoding: 'utf8mb4',
-    host: process.env.MYSQL_HOST,
-    port: process.env.MYSQL_PORT,
-    user: process.env.ACCESSKEY,
-    password: process.env.SECRETKEY,
-    dateStrings: true
-  }
+const mysql = require('think-model-mysql');
+
+module.exports = {
+  handle: mysql,
+  database:  'app_' + process.env.APPNAME,
+  prefix: 'nideshop_',
+  encoding: 'utf8mb4',
+  host: process.env.MYSQL_HOST,
+  port: process.env.MYSQL_PORT,
+  user: process.env.ACCESSKEY,
+  password: process.env.SECRETKEY,
+  dateStrings: true
 };
 ```
 > Node.js连接MySQL参考文档： http://www.sinacloud.com/doc/sae/docker/howto-use-mysql.html#nodejs
