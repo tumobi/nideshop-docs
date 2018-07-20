@@ -19,9 +19,6 @@ NideShop：基于Node.js+MySQL开发的开源微信小程序商城
 
 问题反馈：
 
-* QQ 交流群：497145766
-* Email：tumobi@163.com
-* 作者QQ：1451675076
 * 作者微信号：tumobi
 * 微信公众号：nideshop
 

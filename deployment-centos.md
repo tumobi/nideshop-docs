@@ -1,5 +1,7 @@
 # 在阿里云上部署（CentOS）
 
+推荐使用阿里云服务器部署，备案快，只需要在 APP 上即可完成备案
+
 ### 环境介绍
 阿里云 ECS CentOS 7.3 64 [云服务器ECS优惠券领取链接](https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=3grpysgf&productCode=vm&utm_source=3grpysgf)
 
