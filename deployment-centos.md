@@ -5,6 +5,14 @@
 ### 环境介绍
 阿里云 ECS CentOS 7.3 64 [云服务器ECS优惠券领取链接](https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=3grpysgf&productCode=vm&utm_source=3grpysgf)
 
++ 推荐配置：4CPU、8G内存、4M宽带、40G系统盘
+推荐配置适合正式上线使用，你也可根据自身需要更改配置，如果图片多或是图片加载慢则推荐使用云存储和CDN。
+![推荐配置20180813112415.png](https://upload-images.jianshu.io/upload_images/3985656-605a42f865339daa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
++ 最低配置：1CPU、1G内存、1M宽带、20G系统盘
+最低配置适合开发和测试阶段使用，正式环境不推荐使用。
+![最低配置20180813110355.png](https://upload-images.jianshu.io/upload_images/3985656-70a3089dcd017c1a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ### 更新系统和安装 git、vim、curl
 ```
 yum update -y
